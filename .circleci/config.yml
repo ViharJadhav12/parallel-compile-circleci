@@ -1,7 +1,7 @@
-version: 2.1
+version: 2
 
 workflows:
-  version: 2.1
+  version: 2
   dist-compile:
     jobs:
       - compile
@@ -13,7 +13,7 @@ workflows:
 jobs:
 
   compile:
-    parallelism: 2.1
+    parallelism: 2
     docker:
       - image: gcc:8.2
     steps:
